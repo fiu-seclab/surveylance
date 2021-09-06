@@ -32,7 +32,7 @@ fraud, deceptive advertisements, potentially unwanted programs
 (PUPs), malicious extensions, and malware.
 
 ## Extension
-Surveylance uses a custom extension to automatically find fields and populate them with a pre-defined data. 
+Surveylance uses a custom extension to automatically find fields and populate them with a pre-defined data. To update the user info please checkout out the js-chrome folder and modify the background and formfiller javascript files. 
 
 ## Classification
 
