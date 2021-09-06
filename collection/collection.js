@@ -3,7 +3,7 @@ Javascript module to collect survey scams
 This module is a part of the surveylance project to extract corresponding features for
 classification.
 
-A part of the code and architecture are built upon Thomas Vissers et al. work from the following paper:
+A part of the code is built upon Thomas Vissers et al. work from the following paper:
 @inproceedings{vissers2015parking,
  title={Parking Sensors: Analyzing and Detecting Parked Domains},
  author={Vissers, Thomas and Joosen, Wouter and Nikiforakis, Nick},
