@@ -32,7 +32,7 @@ fraud, deceptive advertisements, potentially unwanted programs
 (PUPs), malicious extensions, and malware.
 
 ## Extension
-Surveylance uses a custom extension to automatically find fields and populate them with a pre-defined data. To update the user info please checkout out the js-chrome folder and modify the background and formfiller javascript files. 
+Surveylance uses a custom extension to automatically find fields and populate them with a pre-defined data. To update the user info please checkout out the js-chrome folder and modify ```background.js``` and ```form-filler-functions.js``` javascript files. 
 
 ## Feature Extraction
 
@@ -57,7 +57,7 @@ The output will be a json file.
 ## Classification
 
  A code sample is provided on how the training and testing should work. 
-```Surveylance_classifier.py```basically receives the training/labeled dataset as well as the unlabeled set in csv formats, and print out the 
+```surveylance.py```basically receives the training/labeled dataset as well as the unlabeled set in csv formats, and print out the 
 classification results for the unlabled set. Some samples are provides.
 
 ## Citation 
