@@ -31,7 +31,7 @@ expose users to a wide range of security issues including identity
 fraud, deceptive advertisements, potentially unwanted programs
 (PUPs), malicious extensions, and malware.
 
-## Extention
+## Extension
 Surveylance uses a custom extension to automatically find fields and populate them with a pre-defined data. 
 
 ## Classification
