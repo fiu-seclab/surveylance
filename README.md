@@ -34,10 +34,32 @@ fraud, deceptive advertisements, potentially unwanted programs
 ## Extension
 Surveylance uses a custom extension to automatically find fields and populate them with a pre-defined data. To update the user info please checkout out the js-chrome folder and modify the background and formfiller javascript files. 
 
+## Feature Extraction
+
+Getting data to construct the feature vectors can be implemented in two different forms. 
+The paper uses both chrome debugging protocol from google chrome and capserjs. In this example,
+you will see the capserjs example as the more straightforward module.
+
+First, retrieve the corresponding data from the target websites (HTML, frames, redirections)
+
+``` $ casperjs --folder=[target folder] --domain=[example.com] collection.js ```
+
+
+Second, extract the features from this data (e.g., the ratio of text, link lengths, http traffic ratio, ...)
+
+ ``` $ python feature_extractor.py [folder] [label]```
+
+ ##### A Quick Example
+
+```sh
+$ casperjs --folder=benign_samples --domain=kharraz.org collection.js
+```
+
+
 ## Classification
 
  A code sample is provided on how the training and testing should work. 
-```surveylance_classifier.py```basically receives the training/labeled dataset as well as the unlabeled set in csv formats, and print out the 
+```Surveylance_classifier.py```basically receives the training/labeled dataset as well as the unlabeled set in csv formats, and print out the 
 classification results for the unlabled set. Some samples are provides.
 
 ## Citation 
