@@ -45,16 +45,14 @@ First, retrieve the corresponding data from the target websites (HTML, frames, r
 ``` $ casperjs --folder=[target folder] --domain=[example.com] collection.js ```
 
 
-Second, extract the features from this data (e.g., the ratio of text, link lengths, http traffic ratio, ...)
-
- ``` $ python feature_extractor.py [folder] [label]```
 
  ##### A Quick Example
 
 ```sh
 $ casperjs --folder=benign_samples --domain=kharraz.org collection.js
-```
 
+```
+The output will be a json file. 
 
 ## Classification
 
